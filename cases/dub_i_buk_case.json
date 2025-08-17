@@ -1,0 +1,82 @@
+{
+  "name": "ООО «Дуб и Бук»",
+  "description": "Сфера деятельности – производство напольных покрытий для детских площадок и стадионов. Работают с 2015 года в Москве, МО, СПб и Лен. области. 156 сотрудников, работает с b2b и b2c. Свой сайт, площадка в Ногинске, склад в Подольске, страница VK. Контактное лицо — Светлана, замдиректора.",
+  "steps": [
+    {
+      "id": "biz_processes",
+      "type": "text",
+      "question": "Предположи, какие бизнес-процессы определяют деятельность компании?",
+      "expected_keywords": ["продажи", "производство", "хранение", "логистика", "монтаж", "претензии"],
+      "evaluation": "keywords"
+    },
+    {
+      "id": "needs",
+      "type": "text",
+      "question": "Предположи, какие потребности существуют у клиента?",
+      "expected_keywords": ["продажа", "контроль", "качество", "защита персональных данных"],
+      "evaluation": "keywords"
+    },
+    {
+      "id": "solutions",
+      "type": "text",
+      "question": "Какие наши услуги могут закрыть эти потребности?",
+      "expected_keywords": ["видеоаналитика", "таргет", "ватс", "8800", "программатик", "контроль автопарка"],
+      "evaluation": "keywords"
+    },
+    {
+      "id": "greeting",
+      "type": "voice",
+      "question": "Ты набрал номер, клиент ответил. Попробуй поприветствовать клиента и представиться.",
+      "expected_keywords": ["мегафон", "меня зовут", "отдел", "удобно ли"],
+      "evaluation": "keywords"
+    },
+    {
+      "id": "contact",
+      "type": "voice",
+      "question": "Установи контакт с клиентом с помощью любого приёма.",
+      "evaluation": "gpt_emotion"
+    },
+    {
+      "id": "need_questions",
+      "type": "text",
+      "question": "Задай 5 вопросов на выявление потребности в услугах ВАТС+8800 и Контроль автопарка.",
+      "evaluation": "manual"
+    },
+    {
+      "id": "presentation_vats",
+      "type": "voice",
+      "question": "Презентуй услугу ВАТС+8800.",
+      "evaluation": "gpt_benefit_check"
+    },
+    {
+      "id": "presentation_autopark",
+      "type": "voice",
+      "question": "Презентуй услугу Контроль автопарка.",
+      "evaluation": "gpt_benefit_check"
+    },
+    {
+      "id": "objection_autopark",
+      "type": "voice",
+      "question": "Отработай возражение: 'GPS уже есть, больше ничего не нужно.'",
+      "evaluation": "gpt_objection"
+    },
+    {
+      "id": "objection_vats",
+      "type": "voice",
+      "question": "Отработай возражение: 'ВАТС + 8800 — дорого.'",
+      "evaluation": "gpt_objection"
+    },
+    {
+      "id": "wrapup",
+      "type": "voice",
+      "question": "Подведи итоги разговора и наметь дальнейшие действия.",
+      "evaluation": "gpt_summary"
+    },
+    {
+      "id": "goodbye",
+      "type": "voice",
+      "question": "Попрощайся с клиентом.",
+      "evaluation": "gpt_politeness"
+    }
+  ]
+}
